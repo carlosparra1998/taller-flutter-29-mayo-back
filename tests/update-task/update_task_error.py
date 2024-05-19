@@ -1,8 +1,9 @@
 import requests
-import json
+
+from tests.get_host import get_host
 
 try:
-    base_url = 'http://35.224.111.41:5000/api/v1/'
+    base_url = f"http://{get_host()}/api/v1/"
 
     login_url = base_url + 'login'
 

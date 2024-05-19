@@ -7,7 +7,7 @@ services:
       dockerfile: ./project-back/config/Dockerfile.database
     environment:
       POSTGRES_USER: myapp
-      POSTGRES_PASSWORD: mySeKreTPassW0rDD
+      POSTGRES_PASSWORD: mysecretpassword
       POSTGRES_DB: myapp
     ports:
       - "5432:5432"
@@ -21,7 +21,7 @@ services:
     environment:
       DB_HOST: database
       DB_USER: myapp
-      DB_PASSWORD: mySeKreTPassW0rDD
+      DB_PASSWORD: mysecretpassword
       DB_NAME: myapp
       DB_PORT: 5432
     ports:

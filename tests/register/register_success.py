@@ -1,13 +1,11 @@
 import time as time
 import requests
 
+from tests.get_host import get_host
+
 try:
-    file = open("url.txt","rb")
-    lines=list()
-    for line in file.readlines():
-            lines.append(line.rstrip().decode("utf-8"))
-    file.close()  
-    base_url = lines[0]
+    base_url = f"http://{get_host()}/api/v1/"
+
     register_url = base_url + 'register'
 
     register_data = {

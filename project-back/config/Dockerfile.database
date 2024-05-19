@@ -3,7 +3,7 @@ FROM postgres:latest
 
 # Variables de entorno para configurar el usuario y la contraseña predeterminados
 ENV POSTGRES_USER myapp
-ENV POSTGRES_PASSWORD mySeKreTPassW0rDD
+ENV POSTGRES_PASSWORD mysecretpassword
 ENV POSTGRES_DB myapp
 
 # Copia el script SQL de inicialización
