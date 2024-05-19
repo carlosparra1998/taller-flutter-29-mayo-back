@@ -1,11 +1,13 @@
 import time
 import requests
 import json
-
-from tests.get_host import get_host
+import sys, os
+sys.path.append(os.path.abspath('../'))
+from tests.get_host_util import get_host
 
 try:
     base_url = f"http://{get_host()}/api/v1/"
+
 
     register_url = base_url + 'register'
 

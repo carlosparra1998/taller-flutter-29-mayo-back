@@ -1,7 +1,9 @@
 import requests
 import json
 
-from tests.get_host import get_host
+import sys, os
+sys.path.append(os.path.abspath('../'))
+from tests.get_host_util import get_host
 
 try:
     base_url = f"http://{get_host()}/api/v1/"
@@ -12,6 +14,7 @@ try:
         'userName': 'user',
         'password': 'user'
     }
+    requests.post(base_url + "register", json=login_data)
 
     response = requests.post(login_url, json=login_data)
 

@@ -1,7 +1,9 @@
 import time as time
 import requests
 
-from tests.get_host import get_host
+import sys, os
+sys.path.append(os.path.abspath('../'))
+from tests.get_host_util import get_host
 
 try:
     base_url = f"http://{get_host()}/api/v1/"
