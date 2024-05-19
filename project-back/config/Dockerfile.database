@@ -1,0 +1,13 @@
+# Usa la imagen base oficial de PostgreSQL
+FROM postgres:latest
+
+# Variables de entorno para configurar el usuario y la contraseña predeterminados
+ENV POSTGRES_USER myapp
+ENV POSTGRES_PASSWORD mySeKreTPassW0rDD
+ENV POSTGRES_DB myapp
+
+# Copia el script SQL de inicialización
+COPY ./project-back/config/init.sql /docker-entrypoint-initdb.d/
+
+# Expone el puerto predeterminado de PostgreSQL
+EXPOSE 5432
