@@ -5,6 +5,8 @@
 
 *$docker-compose up --build*
 
+Es posible que en el primer intento no os funcione. Probad otra vez.
+
 --
 
 ## **Ejecución de los test de ENDPOINTS**
