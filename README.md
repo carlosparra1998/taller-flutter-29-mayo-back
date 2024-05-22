@@ -87,7 +87,7 @@ POST: /api/v1/tasks (token required)
 
 Input: 
 ```
-{"title": "first task 232", "description": "df", 'color': "blue", "preference": 2}
+{"title": "first task 232", "description": "df", "color": "blue", "preference": 2}
 ```
 
 Output: 
@@ -104,7 +104,7 @@ PUT: /api/v1/tasks/<uuid:uuidTask> (token required)
 
 Input: 
 ```
-{"title": "first task 232", "description": "df", 'color': "blue", "preference": 2}
+{"title": "first task 232", "description": "df", "color": "blue", "preference": 2}
 ```
 
 Output: 
